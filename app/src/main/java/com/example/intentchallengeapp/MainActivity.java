@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 iv2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent in=new Intent(Intent.ACTION_VIEW, Uri.parse("https://"+address));
+                        Intent in=new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q="+address));
                         startActivity(in);
                     }
                 });
